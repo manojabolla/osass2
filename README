@@ -1,0 +1,17 @@
+Create a directory bolla.2
+
+The Makefile is created and  can be executed using make all. 
+This generates the executables master and worker.
+Type ./programname [arguments]
+
+
+Run ./master -n[process count] -s[children]
+    ./master -h[help]
+
+
+To clean type make clean.
+
+Used git for version control.
+        Type gitlog
+
+

@@ -1,0 +1,136 @@
+[bolla@hoare7 bolla.2]$ make all
+gcc -g -c master.c
+gcc -o master master.o
+
+[bolla@hoare7 bolla.2]$ ./master -n 10 -s 1
+child Executed 0
+Miliseconds : 0, Seconds : 10000
+Child Executed 1
+Miliseconds : 0, Seconds : 20000
+Child Executed 2
+Miliseconds : 0, Seconds : 30000
+Child Executed 3
+Miliseconds : 0, Seconds : 40000
+Child Executed 4
+Miliseconds : 0, Seconds : 50000
+Child Executed 5
+Miliseconds : 0, Seconds : 60000
+Child Executed 6
+Miliseconds : 0, Seconds : 70000
+Child Executed 7
+Miliseconds : 0, Seconds : 80000
+Child Executed 8
+Miliseconds : 0, Seconds : 90000
+Child Executed 9
+Miliseconds : 0, Seconds : 100000
+Master : Milliseconds = 0, Seconds = 100000
+
+
+[bolla@hoare7 bolla.2]$ ./master -n 10 -s 2
+child Executed 0
+child Executed 1
+Miliseconds : 730, Seconds : 18583
+Child Executed 2
+Miliseconds : 821, Seconds : 19998
+Child Executed 3
+Miliseconds : 811, Seconds : 37908
+Miliseconds : 887, Seconds : 39980
+Child Executed 5
+Child Executed 4
+Miliseconds : 598, Seconds : 57713
+Miliseconds : 637, Seconds : 59980
+Child Executed 6
+Child Executed 7
+Miliseconds : 766, Seconds : 78139
+Miliseconds : 939, Seconds : 79918
+Child Executed 8
+Child Executed 9
+Miliseconds : 120, Seconds : 98142
+Miliseconds : 832, Seconds : 99914
+Master : Milliseconds = 832, Seconds = 99914
+
+
+[bolla@hoare7 bolla.2]$ ./master -n 10 -s 5
+child Executed 0
+child Executed 1
+child Executed 2
+child Executed 3
+child Executed 4
+Miliseconds : 565, Seconds : 33218
+Miliseconds : 917, Seconds : 33887
+Child Executed 5
+Miliseconds : 690, Seconds : 35653
+Child Executed 6
+Child Executed 7
+Miliseconds : 801, Seconds : 47808
+Child Executed 8
+Miliseconds : 207, Seconds : 62102
+Child Executed 9
+Miliseconds : 846, Seconds : 73563
+Miliseconds : 970, Seconds : 75876
+Miliseconds : 593, Seconds : 83678
+Miliseconds : 619, Seconds : 88987
+Miliseconds : 293, Seconds : 92601
+Master : Milliseconds = 293, Seconds = 92601
+_______________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________
+
+[bolla@hoare7 bolla.2]$ ./master -n 20 -s 1
+child Executed 0
+Miliseconds : 0, Seconds : 20000
+Child Executed 1
+Miliseconds : 0, Seconds : 40000
+Child Executed 2
+Miliseconds : 0, Seconds : 60000
+Child Executed 3
+Miliseconds : 0, Seconds : 80000
+Child Executed 4
+Miliseconds : 0, Seconds : 100000
+Child Executed 5
+Miliseconds : 0, Seconds : 120000
+Child Executed 6
+Miliseconds : 0, Seconds : 140000
+Child Executed 7
+Miliseconds : 0, Seconds : 160000
+Child Executed 8
+Miliseconds : 0, Seconds : 180000
+Child Executed 9
+Miliseconds : 0, Seconds : 200000
+Child Executed 10
+Miliseconds : 0, Seconds : 220000
+Child Executed 11
+Miliseconds : 0, Seconds : 240000
+Child Executed 12
+Miliseconds : 0, Seconds : 260000
+Child Executed 13
+Miliseconds : 0, Seconds : 280000
+Child Executed 14
+Miliseconds : 0, Seconds : 300000
+Child Executed 15
+Miliseconds : 0, Seconds : 320000
+Child Executed 16
+Miliseconds : 0, Seconds : 340000
+Child Executed 17
+^C(null)CTRL- Signal interrupt is initiated.
+
+_______________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________
+
+[bolla@hoare7 bolla.2]$ ./master -n 10 -s 1
+child Executed 0
+Miliseconds : 0, Seconds : 10000
+Child Executed 1
+Miliseconds : 0, Seconds : 20000
+(null)Master time out. Terminating remaining processes.
+
+_______________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
